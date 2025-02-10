@@ -1,0 +1,26 @@
+{
+	"name": "CP-exchange",
+	"build": {
+		// Sets the run context to one level up instead of the .devcontainer folder.
+		"context": "..",
+		// Update the 'dockerFile' property if you aren't using the standard 'Dockerfile' filename.
+		"dockerfile": "dev.Dockerfile"
+	},
+	"runArgs": [
+		"--network=host",
+		"-p", "8000:8000",
+		"--mount", "type=tmpfs,destination=/tmp"
+	],
+	"privileged": true,
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"ms-azuretools.vscode-docker",
+                "ms-python.python",
+                "redhat.vscode-yaml",
+                "streetsidesoftware.code-spell-checker",
+                "yzhang.markdown-all-in-one"
+			]
+		}
+	}
+}
