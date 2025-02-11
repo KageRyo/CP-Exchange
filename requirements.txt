@@ -5,7 +5,8 @@ django-cors-headers==3.9.0
 django-extensions==3.2.3
 django-ninja==1.1.0
 # User Account
-pyJWT==2.1.0
+pyJWT==2.10.1
+social-auth-app-django-5.4.2
 # Validate
 validators
 pydantic==2.6.4
